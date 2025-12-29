@@ -1,0 +1,60 @@
+
+/* 网格背景实现 */
+body {
+    background-color: #f8f9fa !important;
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 0, 0, 0.05) 1px, transparent 1px) !important;
+    background-size: 20px 20px !important;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* 隐藏原有的背景图 */
+#app > div[style*="background-image"] {
+    background-image: none !important;
+    background-color: transparent !important;
+}
+
+/* 顶部品牌区域样式 */
+.custom-header {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid #eee;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.brand-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-right: 10px;
+}
+
+.brand-subtitle {
+    font-size: 14px;
+    color: #888;
+    border-left: 1px solid #ddd;
+    padding-left: 10px;
+}
+
+/* 调整上传卡片样式，使其更符合极简风格 */
+.el-upload-dragger {
+    background-color: rgba(255, 255, 255, 0.9) !important;
+    border: 2px dashed #dcdfe6 !important;
+    border-radius: 12px !important;
+    transition: all 0.3s;
+}
+
+.el-upload-dragger:hover {
+    border-color: #409eff !important;
+    background-color: #fff !important;
+}
+
+/* 隐藏一些不必要的官方元素（如果需要） */
+/* .some-official-class { display: none !important; } */
